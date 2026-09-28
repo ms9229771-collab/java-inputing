@@ -1,0 +1,16 @@
+public class jooob{
+ public static void main(String[] args) {
+  int [] q= {7,-3,-4,-12,12,4,6,8,-111};
+  for (int a:q){
+    if (a< 0){
+      continue;
+    }
+    if (a==0){
+      break;
+
+    }
+    System.out.println(a);
+
+  }
+ }
+}
