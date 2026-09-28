@@ -1,0 +1,13 @@
+public class jooob{
+ public static void main(String[] args) {
+  int[] scores = {12, 20,11,5,17,18,29,16,20};
+  float avg , sum = 0;
+  int length = scores.length;
+  for (int s:scores){
+    sum+= s;
+  }
+  avg = sum/length;
+  System.err.println(" the avrage score is:"+ avg);
+
+ }
+}
