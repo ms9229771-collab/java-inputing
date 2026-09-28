@@ -1,0 +1,14 @@
+public class jooob{
+ public static void main(String[] args) {
+  int[] a = {12, 20,11,16,17,17,18,29,3,16,43};
+  
+  int lowestage  =a[0];
+  for (int d : a){
+    if(lowestage >d){
+      lowestage = d;
+    }
+  }
+  System.out.println("the lowwest age in this array:"+ lowestage);
+
+ }
+}
