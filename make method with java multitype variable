@@ -1,0 +1,11 @@
+public class jooob {
+    static String method (int x, int y,String b){
+    return b+":"+(x+y);
+        
+    }
+    public static void main(String[] args) {
+
+        String z = method(8,8,"nn");
+        System.out.println((z));
+    }
+}
