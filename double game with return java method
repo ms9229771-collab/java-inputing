@@ -1,0 +1,11 @@
+public class jooob{
+    static int doublegame (int x){
+        return x*2;
+
+    }
+    public static void main(String[] args) {
+        for (int i=1; i<=20 ; i++ ){
+            System.out.println("bouble of "+ i + " is " + doublegame(i));
+        }
+    }
+}
