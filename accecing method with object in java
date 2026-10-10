@@ -1,0 +1,19 @@
+public class jooob {
+    public void hmm(){
+        System.out.println(" this car is going as fas as it can");
+    }
+
+    public void speed (int maxspeed){
+        System.out.println("max speed is :" + maxspeed);
+
+    }
+    public static void main(String[] args) {
+        joob mycar = new jooob();
+        mycar.hmm();
+        mycar.speed(200);
+    }
+
+
+
+
+}
