@@ -1,0 +1,14 @@
+public class Joob {
+    int score;
+    String studentname;
+
+    public Joob(int math, String moha) {
+        score= math;
+        studentname = moha;
+    }
+
+    public static void main(String[] args) {
+        Joob time = new Joob(100, "lol");
+        System.out.println(time.score + " " + time.studentname);
+    }
+}
