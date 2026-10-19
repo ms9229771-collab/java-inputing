@@ -1,0 +1,66 @@
+public class bankaccount{
+    String owner;
+    double balance;
+    String currency;
+    boolean active;
+    
+
+    public bankaccount(String owner){
+        this (owner,0.0,"usd",true);
+    }
+
+    public bankaccount(String owner,double balance){
+        this(owner, balance,"usd",true);
+    }
+
+    public bankaccount(String owner, double balance,String currency){
+        this (owner,balance, currency,true);
+    }
+    public bankaccount(String owner,double balance,String currency, boolean active){
+        if (owner == null || owner.isEmpty()){
+            throw new IllegalArgumentException(" owner is required");
+        }
+        if (balance<0){
+            throw new IllegalArgumentException("balance cant be negative");
+        }
+        this.owner=owner;
+        this.balance=balance;
+        this.currency=currency;
+        this.active=active;
+
+
+    }
+
+    public void deposit(double amount){
+        if(amount<=0){
+            System.out.println("invalid amount");
+            return ;        }
+
+        balance+=amount;
+    }
+
+    public void printinfo(){
+        System.out.println(owner + ": " + balance + " " + currency
+                           + (active ? " (active)" : " (inactive)"));
+    }
+    public static void main(String[] args) {
+        bankaccount a1=new bankaccount("ali");
+        bankaccount a2 = new bankaccount("sara,500.0");
+        bankaccount a3 = new bankaccount("reza",1000.0,"eur");
+
+
+    
+
+a1.deposit(200);
+a2.deposit(300);
+
+a1 .printinfo();
+a2.printinfo();
+a3.printinfo();
+
+
+
+
+
+    }
+}
