@@ -1,0 +1,38 @@
+public class jooob {
+    private String name;
+    private int age;
+    private String city;
+    public jooob setname(String name){
+        this.name= name;
+        return this;
+    }
+    public  jooob setage(int age){
+        this.age = age;
+        return this;
+    }
+    public jooob setcity(String city){
+        this.city= city;
+        return this;
+    }
+    public String getname() { return name; }
+    public int getAge() { return age; }
+    public String getCity() { return city; }
+
+    
+    public String toString() {
+        return name + ", " + age + ", " + city;
+    }
+    public static void main(String[] args) {
+        jooob p = new jooob ()
+            .setname("Ali")
+            .setage(25)
+            .setcity("Tehran");
+
+System.out.println(p);
+  }
+}
+
+
+
+        
+    
