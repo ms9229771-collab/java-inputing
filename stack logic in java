@@ -1,0 +1,27 @@
+public class callstack{
+    public static void d(){
+        float d= 40.5f;
+        System.out.println("in method d");
+    }
+    public  static void c(){
+    double c = 30.5;
+    d();
+    System.out.println(" in method c");
+
+    }
+    public static void b(){
+        int  b = 20;
+        c();
+        System.out.println(" in method b");
+    }
+    public static  void  a(){
+        int a =10;
+        b();
+        System.out.println(" in method a");
+    }
+    public static void main(String[] args) {
+        a();
+        c();
+    }
+
+}
