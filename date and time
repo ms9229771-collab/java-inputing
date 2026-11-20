@@ -1,0 +1,11 @@
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+public class Joob{
+    public static void main(String[] args) {
+    LocalDateTime dateobj =LocalDateTime.now();
+    System.out.println("befor formatting:"+ dateobj);
+    DateTimeFormatter formatobj=DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+    String formatted = dateobj.format(formatobj);
+    System.out.println("after formattingg:"+ formatted);
+    }
+}
