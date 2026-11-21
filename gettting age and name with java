@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Joob{
+    public static void main(String[] args) {
+        
+    
+    Scanner nameobj = new Scanner(System.in);
+        System.out.println("enter urname");
+
+        Scanner ageobj =new Scanner(System.in);
+        System.out.println("enetr urage");
+
+        String name = nameobj.nextLine();
+        int age = ageobj.nextInt();
+            System.out.println(name +"urname is");
+            System.out.println("ur age is "+ age);
+            nameobj.close();
+        }
+    }
